@@ -1,5 +1,6 @@
 package org.skypro.skyshop.model.search;
 
+
 import org.skypro.skyshop.model.search.SearchResult;
 import org.skypro.skyshop.model.search.Searchable;
 import org.skypro.skyshop.service.StorageService;

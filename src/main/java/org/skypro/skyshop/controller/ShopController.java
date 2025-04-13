@@ -1,5 +1,6 @@
 package org.skypro.skyshop.controller;
 
+
 import org.skypro.skyshop.model.search.SearchResult;
 import org.skypro.skyshop.model.search.SearchService;
 import org.springframework.web.bind.annotation.GetMapping;
