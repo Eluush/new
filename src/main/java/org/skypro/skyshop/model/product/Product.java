@@ -1,5 +1,4 @@
 package org.skypro.skyshop.model.product;
-
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import org.skypro.skyshop.model.search.Searchable;
 
