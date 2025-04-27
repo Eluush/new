@@ -5,6 +5,7 @@ import org.skypro.skyshop.model.dto.UserBasket;
 import org.skypro.skyshop.model.product.Product;
 import org.skypro.skyshop.model.product.ProductBasket;
 import org.springframework.stereotype.Service;
+import org.skypro.skyshop.exeption.NoSuchProductException;
 
 import java.util.List;
 import java.util.UUID;
@@ -21,7 +22,7 @@ public class BasketService {
 
     public void addProductToBasket(UUID id) {
         Product product = storageService.getProductById(id)
-                .orElseThrow(() -> new IllegalArgumentException("Product not found"));
+                .orElseThrow(() -> new NoSuchProductException("Товар не найден"));
         productBasket.addProduct(id);
     }
 

@@ -1,16 +1,19 @@
 package org.skypro.skyshop.model.dto;
 
+import org.skypro.skyshop.model.product.ProductBasket;
+
 import java.util.List;
+
 
 public class UserBasket {
     private final List<BasketItem> items;
     private final double total;
+    private ProductBasket productBasket;
 
     public UserBasket(List<BasketItem> items, double total) {
         this.items = items;
         this.total = total;
     }
-
 
     public UserBasket(List<BasketItem> items) {
         this(
