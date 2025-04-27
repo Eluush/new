@@ -1,13 +1,11 @@
-package org.skypro.skyshop.exception;
-
-import org.skypro.skyshop.exeption.NoSuchProductException;
+package org.skypro.skyshop.exeption;
 import org.skypro.skyshop.model.dto.ShopError;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
-import org.springframework.web.bind.annotation.ControllerAdvice;
 import org.springframework.web.bind.annotation.ExceptionHandler;
+import org.springframework.web.bind.annotation.RestControllerAdvice;
 
-@ControllerAdvice
+@RestControllerAdvice
 public class ShopControllerAdvice {
 
     @ExceptionHandler(NoSuchProductException.class)
