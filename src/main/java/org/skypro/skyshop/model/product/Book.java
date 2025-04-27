@@ -1,5 +1,6 @@
 package org.skypro.skyshop.model.product;
 
+
 import java.util.UUID;
 
 public class Book extends Product {
