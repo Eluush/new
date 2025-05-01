@@ -2,6 +2,7 @@ package org.skypro.skyshop.model.search;
 
 import org.skypro.skyshop.model.search.Searchable;
 
+
 public class SearchResult {
     private final String id;
     private final String name;

@@ -49,4 +49,11 @@ public class StorageService {
         all.addAll(products.values());
         return all;
     }
+
+
+    public Optional<Product> getProductById(UUID id) {
+        return Optional.ofNullable(products.get(id));
+    }
+
 }
+
